@@ -1,8 +1,10 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Customer = void 0;
 class Customer {
-    constructor(theFirst, theLast) {
-        this._firstName = theFirst;
-        this._lastName = theLast;
+    constructor(_firstName, _lastName) {
+        this._firstName = _firstName;
+        this._lastName = _lastName;
     }
     get firstName() {
         return this._firstName;
@@ -17,7 +19,4 @@ class Customer {
         this._lastName = value;
     }
 }
-// let's create an instance
-let myCustomer = new Customer("Martin", "Dixon");
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
+exports.Customer = Customer;
